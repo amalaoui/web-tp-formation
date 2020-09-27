@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+	<head>
+		<title>Formulaire - V1</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Formulaire de test">
+	</head>
+	
+	<body>
+		<h2>Création de formulaire avec les champs suivants :</h2>
+				
+		<form action="send.php" method="POST">
+			<fieldset>
+				<legend>Identité</legend>
+				<label for="email">Email:</label><br>
+				<input type="email" id="email" name="email" required><br>
+				
+				<label for="password" method="POST">Mot de passe :</label><br>
+				<input type="password" id="password" name="password" required><br><br>
+				
+				<label for="username">Username (?) :</label><br>
+				<input type="text" id="username" name="username" pattern="[a-zA-Z0-9]+" required><br><br>
+				
+				<label for="lastname">Nom :</label><br>
+				<input type="text" id="lastname" name="lastname" pattern="[a-zA-Z0-9]+" required><br><br>
+						
+				<label for="firstname">Prénom :</label><br>
+				<input type="text" id="firstname" name="firtsname" pattern="[a-zA-Z0-9]+" required><br><br>
+			</fieldset>
+			
+			<fieldset>
+				<label for="date">Date de naissance :</label><br>
+				<input type="date" name="naissance" min="1910-01-01" pattern="[0-9]+" required><br><br>
+				
+				<label for="tel">Numéro de téléphone :</label><br>
+				<input type="tel" id="phone" name="phone" required><br><br>
+				
+				<label for="Color" method="POST">Votre couleur préférée :</label><br>
+				<input type="Color" id="favorite-color" name="favorite-color"><br><br>
+
+				<label for="image" method="POST">Photo :</label><br>
+				<input type="image" name="attachment" placeholder="Séléctionner votre photo"><br><br>
+			
+				<label for="url">Site internet (url) :</label><br>
+				<input type="url" id="weburl" name="weburl"><br><br>
+				
+				<input type="submit" value="Submit">
+			</fieldset>
+		</form>
+	
+	</body>
+</html>
